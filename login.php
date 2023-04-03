@@ -40,25 +40,58 @@ if(isset($_POST['submit'])) {
     }
 } else {
 ?>
-    <p><font size="+2">Login</font></p>
-    <form name="form1" method="post" action="">
-        <table width="75%" border="0">
-            <tr> 
-                <td width="10%">Username</td>
-                <td><input type="text" name="username"></td>
-            </tr>
-            <tr> 
-                <td>Password</td>
-                <td><input type="password" name="password"></td>
-            </tr>
-            <tr> 
-                <td> </td>
-                <td><input type="submit" name="submit" value="Submit"></td>
-            </tr>
-        </table>
-    </form>
+   
 <?php
 }
 ?>
 </body>
 </html>
+
+<!-- LOGIN -->
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- Custom Theme files -->
+<link href="css/index.css" rel="stylesheet" type="text/css" media="all" />
+<!-- //Custom Theme files -->
+<!-- web font -->
+<link href="//fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i" rel="stylesheet">
+
+<!-- //web font -->
+</head>
+<body> 
+  
+	<!-- main -->
+	<div class="main-w3layouts wrapper">
+		<!-- <h1>Creative SignUp Form</h1> -->
+		<div class="main-agileinfo">
+			<div class="agileits-top">
+				<form action="#" method="post">
+					<input class="text" type="text" name="username" placeholder="Username" required="">
+					<input class="email" type="password" name="password" placeholder="Password" required="">
+				
+					<div class="wthree-text">
+					
+						<div class="clear"> </div>
+					</div>
+					<input  type="submit" name="submit" value="Login">
+				</form>
+				<p>Don't have an Account? <a href="register.php"> Register!</a></p>
+			</div>
+		</div>
+		<!-- copyright -->
+		<!-- <div class="colorlibcopy-agile">
+			<p>© 2018 Colorlib Signup Form. All rights reserved | Design by <a href="https://colorlib.com/" target="_blank">Colorlib</a></p>
+		</div> -->
+		<!-- //copyright -->
+	
+	</div>
+	<!-- //main -->
+</body>
+</html>
+
+
