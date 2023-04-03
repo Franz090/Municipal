@@ -365,24 +365,7 @@ $(document).ready(function(){
 </head>
 <body>
 	<!-- main -->
-	<div class="main-w3layouts wrapper">
-		<!-- <h1>Creative SignUp Form</h1> -->
-		<div class="main-agileinfo">
-			<div class="agileits-top">
-				<form action="#" method="post">
-					<input class="text" type="text" name="name" placeholder="Full Name" required="">
-					<input class="email" type="email" name="email" placeholder="Email" required="">
-					<input class="text" type="text" name="username" placeholder="Username" required="">
-					<input class="text w3lpass" type="text" name="password" placeholder="Password" required="">
-					<div class="wthree-text">
-					
-						<div class="clear"> </div>
-					</div>
-					<input  type="submit" name="submit" value="Login">
-				</form>
-				<p>Don't have an Account? <a href="login.php"> Login Now!</a></p>
-			</div>
-		</div>
+
 		<!-- copyright -->
 		<!-- <div class="colorlibcopy-agile">
 			<p>© 2018 Colorlib Signup Form. All rights reserved | Design by <a href="https://colorlib.com/" target="_blank">Colorlib</a></p>
