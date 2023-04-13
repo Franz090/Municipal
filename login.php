@@ -5,7 +5,7 @@
 </head>
 
 <body>
-<a href="index.php">Home</a> <br />
+
 <?php
 include("connection.php");
 
@@ -29,9 +29,9 @@ if(isset($_POST['submit'])) {
             $_SESSION['name'] = $row['name'];
             $_SESSION['id'] = $row['id'];
         } else {
-            echo "Invalid username or password.";
-            echo "<br/>";
-            echo "<a href='login.php'>Go back</a>";
+           echo ("<SCRIPT LANGUAGE='JavaScript'>
+    window.alert('Incorrect Password or Username')
+    window.location.href='view.php';  </SCRIPT>");
         }
 
         if(isset($_SESSION['valid'])) {
@@ -57,29 +57,35 @@ if(isset($_POST['submit'])) {
 <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
 <!-- Custom Theme files -->
 <link href="css/index.css" rel="stylesheet" type="text/css" media="all" />
+
 <!-- //Custom Theme files -->
 <!-- web font -->
 <link href="//fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i" rel="stylesheet">
 
 <!-- //web font -->
 </head>
-<body> 
+
+<body > 
   
 	<!-- main -->
 	<div class="main-w3layouts wrapper">
 		<!-- <h1>Creative SignUp Form</h1> -->
 		<div class="main-agileinfo">
-			<div class="agileits-top">
+			<div class="agileits-top"><img style="float:left;" src="Images/logo.png" width="100"  height="100" alt="" srcset="">
+                <div><h1><center>Municipal Treasury</center></h5>
+                <br>
 				<form action="#" method="post">
-					<input class="text" type="text" name="username" placeholder="Username" required="">
-					<input class="email" type="password" name="password" placeholder="Password" required="">
+					<input style="width: 100%;" class="text" type="text" name="username" placeholder="Username" required=""><br>
+					<input style="width: 100%;" class="text" type="password" name="password" placeholder="Password" required="">
 				
 					<div class="wthree-text">
 					
 						<div class="clear"> </div>
 					</div>
-					<input  type="submit" name="submit" value="Login">
+                 
+					<input style="width: 100%;" type="submit" name="submit" value="Login">
 				</form>
+            </div>
 				<p>Don't have an Account? <a href="register.php"> Register!</a></p>
 			</div>
 		</div>

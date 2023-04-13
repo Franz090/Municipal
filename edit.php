@@ -112,8 +112,8 @@ $department = $res['department'];
             </tr>
             <tr> 
                 <td>Total</td>
-                <td>    <select name="department" style="float:left">
-                    <option value=''>Department</option>   
+                <td>    <select name="department" style="float:left" required>
+                    <option value='' selected>Department</option>   
                  <option value='Office Of the Mayor'>Office Of the Mayor</option>  
                  <option value="Business Permit and Licensing Office">Business Permit and Licensing Office</option>     
                  <option value="Office of the Vice Mayor">Office of the Vice Mayor</option>    

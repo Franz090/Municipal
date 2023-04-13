@@ -14,6 +14,7 @@ include_once("connection.php");
 $result = mysqli_query($mysqli, "SELECT * FROM products WHERE login_id=".$_SESSION['id']." ORDER BY id DESC");
 ?>
 
+
 <html>
 <head>
 <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
@@ -23,9 +24,10 @@ $result = mysqli_query($mysqli, "SELECT * FROM products WHERE login_id=".$_SESSI
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
     <title>Homepage</title>
 </head>
-
+<?php include_once('header.php'); ?>
 <body>
 <a href="index.php">Home</a> | <a href="add.html">Add New Data</a> | <a href="logout.php">Logout</a>
 <br/><br/>

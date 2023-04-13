@@ -4,7 +4,7 @@
 </head>
 
 <body>
-    <a href="index.php">Home</a> <br />
+   
     <?php
     include("connection.php");
 
@@ -22,9 +22,9 @@
             mysqli_query($mysqli, "INSERT INTO login(name, email, username, password) VALUES('$name', '$email', '$user', md5('$pass'))")
             or die("Could not execute the insert query.");
 			
-            echo "Registration successful";
-            echo "<br/>";
-            echo "<a href='login.php'>Login</a>";
+            echo ("<SCRIPT LANGUAGE='JavaScript'>
+    window.alert('Succesfully Registered')
+    window.location.href='view.php';  </SCRIPT>");
         }
     } else {
 ?>
@@ -49,18 +49,22 @@
 		<!-- <h1>Creative SignUp Form</h1> -->
 		<div class="main-agileinfo">
 			<div class="agileits-top">
+                <img style="float:left;" src="Images/logo.png" width="100"  height="100" alt="" srcset="">
+                <div class=""><h1><center>Municipal Treasury</center></h5>
+                <br>
 				<form action="#" method="post">
-					<input class="text" type="text" name="name" placeholder="Full Name" required="">
-					<input class="email" type="email" name="email" placeholder="Email" required="">
-					<input class="text" type="text" name="username" placeholder="Username" required="">
-					<input class="text w3lpass" type="text" name="password" placeholder="Password" required="">
+					<input style="width: 100%;" class="text" type="text" name="name" placeholder="Full Name" required=""><br>
+					<input style="width: 100%;" class="text" type="email" name="email" placeholder="Email" required=""><br>
+					<input style="width: 100%;" class="text" type="text" name="username" placeholder="Username" required="">
+					<input style="width: 100%;" class="text w3lpass" type="text" name="password" placeholder="Password" required="">
 					<div class="wthree-text">
 					
 						<div class="clear"> </div>
 					</div>
-					<input  type="submit" name="submit" value="Login">
+					<input   type="submit" name="submit" value="Register">
 				</form>
-				<p>Don't have an Account? <a href="login.php"> Login Now!</a></p>
+    </div>
+				<p>I already have an account? <a href="login.php"> Login Now!</a></p>
 			</div>
 		</div>
 		<!-- copyright -->
